@@ -1,0 +1,15 @@
+电脑直接接上LikeCan，不用接传输数据的can线
+1.安装 libudev-dev: sudo apt-get install  libudev-dev
+2.拷贝/ver 2.0.5/linux usb权限问题/80-laike-acusb.rules 到 /etc/udev/rules.d/
+3.重启系统
+4.在/ver 2.0.5/acusb linux demo/64bit文件夹下面：
+sudo make install
+sudo make 
+sudo ./testLikeCan
+
+然后测试我的radar的can报文发送，大功告成
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+不要忘记替换libCanCmd.so和ICANCmd.h文件
+
+
